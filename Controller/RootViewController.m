@@ -12,6 +12,7 @@
 #import "ColumnarView.h"
 #import "LineChartView.h"
 #import "RainbowView.h"
+#import "PieChartView.h"
 #define XWSCREENW [UIScreen mainScreen].bounds.size.width
 #define XWSCREENH [UIScreen mainScreen].bounds.size.height
 #define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
@@ -31,10 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self CreateHistogram];
-    [self CreateLineChart];
-    [self CreatteRainbow];
-    [self CreateWater];
+//    [self CreateHistogram];
+//    [self CreateLineChart];
+//    [self CreatteRainbow];
+//    [self CreateWater];
+    [self CreatePieChart];
 }
 
 
@@ -107,6 +109,26 @@
     watersmall.percent = 0.5;
     roundView.center = waterbig.center;
     [self.view addSubview:watersmall];
+    
+}
+-(void)CreatePieChart{
+
+    PieChartView * pieChartView = [[PieChartView alloc]initWithFrame:CGRectMake(0, 0, XWSCREENW, XWSCREENH)];
+    
+    pieChartView.ArcCentreCoordinateAll = @[@"20",@"20",@"20",@"20",@"20",];
+    pieChartView.aboveHintTextAttayAll = @[@"20",@"20",@"20",@"20",@"20",];
+    pieChartView.belowHintTextAttayAll = @[@"20",@"20",@"20",@"20",@"20",];
+    
+    pieChartView.PieChartWidth = 60;
+    
+    pieChartView.indicatrixLineColor = [UIColor redColor];
+    pieChartView.IndicatrixLineWidth = 1.0;
+    pieChartView.IndicatrixLineLength = 60;
+    
+    pieChartView.HintTextFont = 13.0;
+    pieChartView.HintTextColor = [UIColor blackColor];
+    
+    [self.view addSubview:pieChartView];
     
 }
 - (void)didReceiveMemoryWarning {

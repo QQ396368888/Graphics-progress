@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBAB3EE61E6E806600AC9712 /* PieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3EE51E6E806600AC9712 /* PieChartView.m */; };
 		CBAEF6781DBDB41D005C6939 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEF6771DBDB41D005C6939 /* main.m */; };
 		CBAEF67B1DBDB41D005C6939 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEF67A1DBDB41D005C6939 /* AppDelegate.m */; };
 		CBAEF6831DBDB41D005C6939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEF6821DBDB41D005C6939 /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBAB3EE41E6E806600AC9712 /* PieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartView.h; sourceTree = "<group>"; };
+		CBAB3EE51E6E806600AC9712 /* PieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartView.m; sourceTree = "<group>"; };
 		CBAEF6731DBDB41D005C6939 /* Graphics progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graphics progress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEF6771DBDB41D005C6939 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBAEF6791DBDB41D005C6939 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBAB3EE31E6E805300AC9712 /* Pie Chart */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB3EE41E6E806600AC9712 /* PieChartView.h */,
+				CBAB3EE51E6E806600AC9712 /* PieChartView.m */,
+			);
+			name = "Pie Chart";
+			sourceTree = "<group>";
+		};
 		CBAEF66A1DBDB41D005C6939 = {
 			isa = PBXGroup;
 			children = (
+				CBAB3EE31E6E805300AC9712 /* Pie Chart */,
 				CBAEF6BC1DBDDB56005C6939 /* Rainbow figure */,
 				CBAEF6B81DBDD054005C6939 /* The line chart */,
 				CBAEF6B41DBDB4CB005C6939 /* A histogram */,
@@ -329,6 +342,7 @@
 			files = (
 				CBAEF6B31DBDB470005C6939 /* WaterView.m in Sources */,
 				CBAEF67B1DBDB41D005C6939 /* AppDelegate.m in Sources */,
+				CBAB3EE61E6E806600AC9712 /* PieChartView.m in Sources */,
 				CBAEF6BB1DBDD054005C6939 /* LineChartView.m in Sources */,
 				CBAEF6B21DBDB470005C6939 /* RoundView.m in Sources */,
 				CBAEF6B71DBDB4E8005C6939 /* ColumnarView.m in Sources */,
@@ -541,6 +555,7 @@
 				CBAEF6A21DBDB41E005C6939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBAEF6A31DBDB41E005C6939 /* Build configuration list for PBXNativeTarget "Graphics progressTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +564,7 @@
 				CBAEF6A51DBDB41E005C6939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBAEF6A61DBDB41E005C6939 /* Build configuration list for PBXNativeTarget "Graphics progressUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +573,7 @@
 				CBAEF6A81DBDB41E005C6939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
